@@ -1,3 +1,6 @@
+import axios from "axios";
+import BASE_URL from "../Hooks/apiUrl";
+
 export const GetLocation = async (value) => {
   setQuery(value);
 
@@ -8,8 +11,7 @@ export const GetLocation = async (value) => {
 
   try {
     const response = await axios.get(
-      "https://pallaku-backend.onrender.com/api/location/search",
-      // "http://localhost:5000/api/location/search",
+      `${BASE_URL.replace(/\/$/, "")}/api/location/search`,
       {
         params: { q: value },
       }

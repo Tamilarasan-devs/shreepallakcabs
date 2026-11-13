@@ -49,10 +49,10 @@ export default function SuccessPage() {
         // Simulate API delay
         await new Promise((resolve) => setTimeout(resolve, 800));
 
-        // Use env variable or fallback to localhost
+        // Use env variable or fallback to BASE_URL
         const API_BASE_URL =
           import.meta.env.VITE_API_BASE_URL ||
-          "https://pallaku-backend.onrender.com";
+          "https://pallaku-backend-udh7.onrender.com";
 
         const response = await axios.get(`${API_BASE_URL}/api/booking/${id}`);
 

@@ -124,7 +124,7 @@ const VehiclesList = () => {
                     {tripType === "onewaytrip" ? "One Way" : "Round Trip"}
                   </span>
                   <img
-                    src={`https://pallaku-backend.onrender.com/image/${car.img}`}
+                    src={`https://pallaku-backend-udh7.onrender.com/image/${car.img}`}
                     alt={car.type}
                     className="max-h-36 max-w-full object-contain transition-transform duration-300 hover:scale-105"
                     onError={(e) => {

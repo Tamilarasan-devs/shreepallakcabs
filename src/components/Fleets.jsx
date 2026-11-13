@@ -96,7 +96,7 @@ const Fleets = () => {
                 {/* Car Image with Clean Background (no colored backdrop block) */}
                 <div className="relative w-full aspect-[16/11] px-4 py-2 flex items-center justify-center overflow-hidden bg-white">
                   <img
-                    src={`https://pallaku-backend.onrender.com/image/${val.img}`}
+                    src={`https://pallaku-backend-udh7.onrender.com/image/${val.img}`}
                     alt={val.type}
                     className="relative z-10 object-contain w-full h-full max-h-36 sm:max-h-40 transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {

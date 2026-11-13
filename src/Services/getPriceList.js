@@ -3,9 +3,8 @@ import BASE_URL from "../Hooks/apiUrl";
 
 const getPriceList = async () => {
   try {
-    // const response = await axios.get("http://localhost:5000/pricelist");
     const response = await axios.get(
-      "https://pallaku-backend.onrender.com/pricelist"
+      `${BASE_URL.replace(/\/$/, "")}/pricelist`
     );
     if (response.status !== 200) {
       throw new Error("Failed to fetch price list");

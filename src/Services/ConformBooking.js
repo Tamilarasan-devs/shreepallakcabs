@@ -1,10 +1,10 @@
 import axios from "axios";
+import BASE_URL from "../Hooks/apiUrl";
 
 const ConformBooking = async (bookingData) => {
   try {
     const response = await axios.post(
-      // "http://localhost:5000/conform",
-      "https://pallaku-backend.onrender.com/conform",
+      `${BASE_URL.replace(/\/$/, "")}/conform`,
       bookingData
     );
     // console.log('response :', response)
